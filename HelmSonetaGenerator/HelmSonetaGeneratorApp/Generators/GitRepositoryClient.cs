@@ -5,25 +5,17 @@ namespace HelmSonetaGenerator.Generators;
 
 public class GitRepositoryClient : IGitRepositoryClient
 {
-    private readonly HttpClient _http;
-
-    public GitRepositoryClient(HttpClient httpClient)
-    {
-        _http = httpClient;
-        _http.DefaultRequestHeaders.UserAgent.ParseAdd("HelmSonetaGeneratorAPI/1.0");
-    }
-
-    public async Task<bool> FileExistsAsync(string owner, string repo, string branch, string path, string patToken)
+    public async Task<HttpResponseMessage> FileExistsAsync(string owner, string repo, string branch, string path, string patToken)
     {
         using var req = new HttpRequestMessage(HttpMethod.Get, $"https://api.github.com/repos/{owner}/{repo}/contents/{Uri.EscapeDataString(path)}?ref={Uri.EscapeDataString(branch)}");
         AddAuth(req, patToken);
-        using var resp = await _http.SendAsync(req);
-        return resp.IsSuccessStatusCode;
+        var client = new HttpClient();
+        client.DefaultRequestHeaders.UserAgent.ParseAdd("HelmSonetaGeneratorAPI/1.0");
+        return await client.SendAsync(req);
     }
 
     public async Task UpsertFileAsync(string owner, string repo, string branch, string path, string content, string commitMessage, string patToken)
     {
-        // Need existing file SHA to update; omit SHA to create.
         string? existingSha = await GetFileShaOrNull(owner, repo, branch, path, patToken);
         var client = new HttpClient();
         client.DefaultRequestHeaders.UserAgent.ParseAdd("HelmSonetaGeneratorAPI/1.0");
@@ -44,19 +36,6 @@ public class GitRepositoryClient : IGitRepositoryClient
         using var resp = await client.SendAsync(req);
         resp.EnsureSuccessStatusCode();
     }
-    
-    public async Task UpsertFileAsync2(string owner, string repo, string branch, string path, string _content,
-        string commitMessage, string patToken)
-    {
-        var client = new HttpClient();
-        var request = new HttpRequestMessage(HttpMethod.Put, "https://api.github.com/repos/mikze/argocd-demo/contents/envs/default/apps/apitest2.yaml");
-        AddAuth(request, patToken);
-        var content = new StringContent("{\n    \"message\": \"Add empty test.yaml file\",\n    \"content\": \"\",\n    \"branch\": \"main\"\n}", null, "application/json");
-        request.Content = content;
-        var response = await client.SendAsync(request);
-        response.EnsureSuccessStatusCode();
-        Console.WriteLine(await response.Content.ReadAsStringAsync());
-    }
 
     public async Task DeleteFileAsync(string owner, string repo, string branch, string path, string commitMessage, string patToken)
     {
@@ -76,8 +55,8 @@ public class GitRepositoryClient : IGitRepositoryClient
         };
         AddAuth(req, patToken);
 
-        using var resp = await _http.SendAsync(req);
-        resp.EnsureSuccessStatusCode();
+        //using var resp = await _http.SendAsync(req);
+        //resp.EnsureSuccessStatusCode();
     }
 
     private async Task<string?> GetFileShaOrNull(string owner, string repo, string branch, string path, string patToken)

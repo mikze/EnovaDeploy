@@ -1,51 +1,35 @@
 using System.Net;
+using Common;
 using HelmSonetaGenerator;
 using HelmSonetaGenerator.Entities;
 using HelmSonetaGenerator.Generators;
+using HelmSonetaGeneratorAPI.GitRepo;
+using HelmSonetaGeneratorApp.Services.RepoUrlProvider;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+builder.Services.AddSingleton<IRepoUrlProvider>(sp =>
+    new RepoUrlProvider("https://github.com/mikze/helm-charts.git", "mikze"));
+
 var app = builder.Build();
 
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
 app.MapGet("/", () => Handl());
-app.MapGet("/upload", () => CreateAndUpload());
-app.MapGet("/check", () => CheckFile());
+app.MapPost("/upload", new GitHandler().CreateAndUpload);
+app.MapGet("/check", (string path) => new GitHandler().CheckFile(path));
+app.MapDelete("/delete", (string path) => new GitHandler().DeleteFile(path));
 
 app.Run();
-
 
 string Handl()
 {
     return "pol";
-}
-
-async Task<bool> CheckFile()
-{
-    bool toReturn;
-    using (var httpClient = new HttpClient())
-    {
-        var gitClient = new GitRepositoryClient(httpClient);
-        toReturn = await gitClient.FileExistsAsync("mikze", "argocd-demo", "main", "envs/default/apps/soneta.yaml", Cred.GitHubPat);
-    }
-
-    return toReturn;
-}
-object CreateAndUpload()
-{
-    var file =  new HelmYamlGenerator().GenerateApplicationYaml(new Document()
-    {
-        AppName = "soneta33",
-        Namespace = "soneta33",
-        RepoUrl = "https://github.com/mikze/helm-charts.git",
-        Path = "charts/soneta",
-        TargetRevision = "main"
-    });
-    object toReturn = null;
-    using (var httpClient = new HttpClient())
-    {
-        var gitClient = new GitRepositoryClient(httpClient);
-        toReturn = gitClient.UpsertFileAsync("mikze", "argocd-demo", "main", "envs/default/apps/ApiTest.yaml", file,"TEST COMMIT VIA API", Cred.GitHubPat);
-    }
-
-    return new HttpResponseMessage(HttpStatusCode.Created);
-    //UpsertFileAsync
 }

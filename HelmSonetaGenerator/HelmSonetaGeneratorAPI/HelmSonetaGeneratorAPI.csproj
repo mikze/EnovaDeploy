@@ -9,7 +9,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\Common\Common\Common.csproj" />
       <ProjectReference Include="..\HelmSonetaGeneratorApp\HelmSonetaGeneratorApp.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.6" />
     </ItemGroup>
 
 </Project>

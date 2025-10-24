@@ -9,66 +9,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dead4cdf-f829-4fb9-b916-ee339671b42a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/.idea/.idea.EnovaDeploy/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/.idea/.idea.EnovaDeploy/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/.idea/.idea.EnovaDeploy/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnovaDeploy.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrder.Infrastructure/Class1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrder.Infrastructure/EnvironmentOrder.Infrastructure.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.API/EnvironmentOrderService.API.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.API/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.API/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.API/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.API/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Application/Commands/AddEnvironmentOrder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Application/Commands/Handlers/AddEnvironmentOrderHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Application/EnvironmentOrderService.Application.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Entities/AggregateId.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Entities/AggregateRoot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Entities/EnvironmentOrder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Enums/EnvironmentOrderStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/EnvironmentOrderService.Domain.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Events/EnvironmentOrderCancelled.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Events/EnvironmentOrderPublished.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Events/EnvironmentOrderUpdated.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Events/IDomainEvent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Exceptions/ChartNameException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Exceptions/ChartVersionException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Exceptions/CpuException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Exceptions/DomainException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Exceptions/EnvironmentNameException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Exceptions/InvalidAggregateIdException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Exceptions/MemoryException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Exceptions/ReplicasInvalidException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Exceptions/RequestedByException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Exceptions/ServiceNameException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Exceptions/ServicesEmptyException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Exceptions/ServicesNullException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Exceptions/VersionValidationException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/Repositories/IResourcesRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/ValueObjects/EnvironmentService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Domain/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HelmSonetaGenerator/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HelmSonetaGenerator/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HelmSonetaGenerator/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelmSonetaGenerator.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelmSonetaGeneratorAPI/HelmSonetaGeneratorAPI.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelmSonetaGeneratorAPI/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelmSonetaGeneratorAPI/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelmSonetaGeneratorAPI/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelmSonetaGeneratorAPI/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelmSonetaGeneratorApp/Cred/Cred.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelmSonetaGeneratorApp/Entities/Document.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelmSonetaGeneratorApp/Generators/Generator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelmSonetaGeneratorApp/Generators/GitRepositoryClient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelmSonetaGeneratorApp/Generators/HelmYamlGenerator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelmSonetaGeneratorApp/Generators/IGenerator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelmSonetaGeneratorApp/Generators/IGitRepositoryClient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelmSonetaGeneratorApp/Generators/IHelmYamlGenerator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HelmSonetaGeneratorApp/HelmSonetaGeneratorApp.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Common/Common/.idea/.idea.Common/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Common/Common/.idea/.idea.Common/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Common/Common/Common.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Common/Common/Common.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Common/Common/DTO.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Application/Commands/AddEnvironmentOrderCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelmSonetaGeneratorAPI/GitRepo/GitRepositoryClient.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HelmSonetaGeneratorApp/Services/RepoUrlProvider/RepoUrlProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EnovaDeploy/EnovaDeploy.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../EnovaDeploy/EnovaDeploy.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Application/Commands/AddEnvironmentOrder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Application/Commands/Handlers/AddEnvironmentOrderHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../EnovaDeploy/EnvironmentOrderService.Application/Commands/Handlers/AddEnvironmentOrderHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HelmSonetaGenerator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HelmSonetaGenerator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelmSonetaGenerator.sln" beforeDir="false" afterPath="$PROJECT_DIR$/HelmSonetaGenerator.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelmSonetaGeneratorAPI/HelmSonetaGeneratorAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HelmSonetaGeneratorAPI/HelmSonetaGeneratorAPI.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelmSonetaGeneratorAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HelmSonetaGeneratorAPI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelmSonetaGeneratorApp/Cred/Cred.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HelmSonetaGeneratorApp/Cred/Cred.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelmSonetaGeneratorApp/Generators/Generator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelmSonetaGeneratorApp/Generators/GitRepositoryClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HelmSonetaGeneratorApp/Generators/GitRepositoryClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelmSonetaGeneratorApp/Generators/IGitRepositoryClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HelmSonetaGeneratorApp/Generators/IGitRepositoryClient.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,15 +42,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/HelmSonetaGeneratorAPI/GitRepo/GitRepositoryClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/HelmSonetaGeneratorAPI/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/HelmSonetaGeneratorApp/Cred/Cred.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/HelmSonetaGeneratorApp/Entities/Document.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/HelmSonetaGeneratorApp/Generators/Generator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/HelmSonetaGeneratorApp/Generators/GitRepositoryClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/HelmSonetaGeneratorApp/Generators/HelmYamlGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/HelmSonetaGeneratorApp/Generators/IGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/HelmSonetaGeneratorApp/Generators/IGitRepositoryClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/HelmSonetaGeneratorApp/Generators/IHelmYamlGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HelmSonetaGeneratorApp/Services/RepoUrlProvider/RepoUrlProvider.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -102,11 +63,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.HelmSonetaGenerator: http.executor": "Debug",
+    ".NET Launch Settings Profile.HelmSonetaGenerator: http.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/mikze/Documents/EnvironmentOrder/EnovaDeploy/Common/Common/Common.csproj",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -159,7 +121,13 @@
       <updated>1760349892653</updated>
       <workItem from="1760349893698" duration="3120000" />
       <workItem from="1760356752323" duration="3163000" />
-      <workItem from="1760426533690" duration="16189000" />
+      <workItem from="1760426533690" duration="16987000" />
+      <workItem from="1760464836546" duration="188000" />
+      <workItem from="1760517247421" duration="3796000" />
+      <workItem from="1760523748326" duration="2043000" />
+      <workItem from="1760988432779" duration="1564000" />
+      <workItem from="1761032354642" duration="1972000" />
+      <workItem from="1761297227425" duration="2766000" />
     </task>
     <servers />
   </component>
@@ -186,43 +154,17 @@
           <option name="timeStamp" value="3" />
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/HelmSonetaGeneratorAPI/Program.cs</url>
-          <line>32</line>
-          <properties documentPath="$PROJECT_DIR$/HelmSonetaGeneratorAPI/Program.cs" containingFunctionPresentation="Local function 'CreateAndUpload'">
-            <startOffsets>
-              <option value="722" />
-            </startOffsets>
-            <endOffsets>
-              <option value="723" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/HelmSonetaGeneratorApp/Generators/GitRepositoryClient.cs</url>
-          <line>86</line>
+          <line>66</line>
           <properties documentPath="$PROJECT_DIR$/HelmSonetaGeneratorApp/Generators/GitRepositoryClient.cs" containingFunctionPresentation="Method 'GetFileShaOrNull'">
             <startOffsets>
-              <option value="3776" />
+              <option value="2868" />
             </startOffsets>
             <endOffsets>
-              <option value="3952" />
+              <option value="3044" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/HelmSonetaGeneratorApp/Generators/GitRepositoryClient.cs</url>
-          <line>18</line>
-          <properties documentPath="$PROJECT_DIR$/HelmSonetaGeneratorApp/Generators/GitRepositoryClient.cs" containingFunctionPresentation="Method 'FileExistsAsync'">
-            <startOffsets>
-              <option value="688" />
-            </startOffsets>
-            <endOffsets>
-              <option value="711" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
